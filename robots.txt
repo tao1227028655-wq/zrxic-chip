@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.zrxic-chip.com/sitemap.xml
