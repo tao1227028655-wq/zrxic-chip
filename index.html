@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shenzhen Zhirui Xin Electronics — надежный поставщик электронных компонентов из Китая. IC, транзисторы, конденсаторы, разъемы, модули питания. Прямые поставки из Шэньчжэня и Гонконга в Россию, Беларусь, Казахстан, Узбекистан.">
+    <meta name="keywords" content="электронные компоненты, поставщик электронных компонентов Китай, IC дистрибьютор, купить микросхемы оптом, Shenzhen electronics supplier, electronic components distributor, Шэньчжэнь электроника, доставка в Россию, BOM поставки, закупка электронных компонентов">
+    <meta name="author" content="Shenzhen Zhirui Xin Electronics Co., Ltd.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.zrxic-chip.com/">
+
+    <meta property="og:title" content="Zhirui Xin Electronics — Electronic Components from Shenzhen">
+    <meta property="og:description" content="Direct supply of ICs, transistors, capacitors, connectors, power modules from Shenzhen & Hong Kong. Delivery to Russia, CIS.">
+    <meta property="og:url" content="https://www.zrxic-chip.com/">
+    <meta property="og:type" content="website">
+
+    <title>Zhirui Xin Electronics — Поставки электронных компонентов | Шэньчжэнь + Гонконг</title>
+    <style>
+        :root {
+            --navy: #0b1a30;
+            --blue: #1a3f6b;
+            --accent: #e6751a;
+            --green: #27ae60;
+            --gray-bg: #f4f6f9;
+            --text: #1e1e1e;
+            --light: #6b7c93;
+            --white: #ffffff;
+            --card: #ffffff;
+            --radius: 8px;
+            --shadow: 0 2px 16px rgba(0,0,0,.06);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            background: var(--white);
+        }
+
+        /* ---- NAV ---- */
+        .nav { position: sticky; top: 0; z-index: 100; background: rgba(11,26,48,0.97); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,.06); }
+        .nav .inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 60px; }
+        .nav .logo { font-size: 1.2rem; font-weight: 700; color: white; text-decoration: none; white-space: nowrap; }
+        .nav .logo span { color: var(--accent); }
+        .nav a { color: #b0c4d8; text-decoration: none; font-size: .9rem; padding: 8px 14px; border-radius: 4px; transition: .2s; }
+        .nav a:hover { color: white; background: rgba(255,255,255,.08); }
+        .nav .lang { background: rgba(255,255,255,.1); padding: 6px 14px; border-radius: 4px; color: white; font-size: .85rem; cursor: pointer; border: none; }
+        .nav-toggle { display: none; background: none; border: none; color: white; font-size: 1.6rem; cursor: pointer; }
+        @media(max-width:768px){
+            .nav-links { display: none; position: absolute; top: 60px; left: 0; right: 0; background: var(--navy); flex-direction: column; padding: 12px 24px; gap: 4px; }
+            .nav-links.open { display: flex; }
+            .nav-toggle { display: block; }
+        }
+
+        /* ---- HERO ---- */
+        .hero {
+            background: linear-gradient(135deg, #060f1e 0%, #0f2744 40%, #1a3f6b 100%);
+            color: white; padding: 90px 0 80px; position: relative; overflow: hidden;
+        }
+        .hero::after {
+            content: ""; position: absolute; right: -80px; top: -40px; width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(230,117,26,.12) 0%, transparent 70%); border-radius: 50%;
+        }
+        .hero .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .hero h1 { font-size: 2.6rem; font-weight: 800; line-height: 1.2; margin-bottom: 18px; }
+        .hero h1 span { color: var(--accent); }
+        .hero .lead { font-size: 1.15rem; color: #8ab4d6; margin-bottom: 28px; max-width: 520px; }
+        .hero .actions { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 13px 32px; border-radius: 6px; font-weight: 600; font-size: .95rem; text-decoration: none; cursor: pointer; border: none; transition: .2s; }
+        .btn-primary { background: var(--accent); color: white; }
+        .btn-primary:hover { background: #d0630f; }
+        .btn-outline { background: transparent; border: 2px solid rgba(255,255,255,.4); color: white; }
+        .btn-outline:hover { border-color: white; }
+
+        .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .stat-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 24px 20px; text-align: center; }
+        .stat-card .num { font-size: 2rem; font-weight: 800; color: var(--accent); }
+        .stat-card .label { font-size: .82rem; color: #8ab4d6; margin-top: 4px; }
+
+        @media(max-width:768px){
+            .hero { padding: 50px 0; }
+            .hero .container { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero-stats { grid-template-columns: 1fr 1fr; gap: 10px; }
+        }
+
+        /* ---- SECTIONS ---- */
+        section { padding: 70px 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .section-label { display: inline-block; background: #e8f0f8; color: var(--blue); font-size: .78rem; font-weight: 700; padding: 4px 14px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+        h2 { font-size: 2rem; font-weight: 700; margin-bottom: 12px; color: var(--navy); }
+        .section-desc { color: var(--light); font-size: 1.05rem; margin-bottom: 36px; max-width: 640px; }
+        .alt { background: var(--gray-bg); }
+
+        /* ---- CATEGORIES ---- */
+        .cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; }
+        .cat { background: var(--card); border-radius: var(--radius); padding: 28px 20px; text-align: center; box-shadow: var(--shadow); transition: transform .2s, box-shadow .2s; }
+        .cat:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,.1); }
+        .cat .icon { font-size: 2.4rem; margin-bottom: 10px; }
+        .cat h4 { font-size: .95rem; color: var(--navy); }
+        .cat .sub { font-size: .8rem; color: var(--light); margin-top: 4px; }
+
+        /* ---- BRANDS ---- */
+        .brand-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .brand { background: white; border: 1px solid #e0e5eb; padding: 8px 18px; border-radius: 6px; font-size: .88rem; font-weight: 500; color: var(--text); white-space: nowrap; transition: .2s; }
+        .brand:hover { border-color: var(--accent); color: var(--accent); }
+
+        /* ---- ADVANTAGES ---- */
+        .adv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
+        .adv { background: var(--card); border-radius: var(--radius); padding: 30px 26px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start; }
+        .adv .adv-icon { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+        .adv h4 { margin-bottom: 6px; color: var(--navy); }
+        .adv p { font-size: .9rem; color: var(--light); }
+
+        /* ---- CONTACT ---- */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .contact-info .item { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 24px; }
+        .contact-info .ci-icon { font-size: 1.3rem; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: #e8f0f8; }
+        .contact-info .ci-label { font-size: .78rem; color: var(--light); text-transform: uppercase; letter-spacing: .5px; }
+        .contact-info .ci-val { font-weight: 600; color: var(--navy); }
+        .contact-info a { color: var(--blue); text-decoration: none; }
+        .contact-info a:hover { text-decoration: underline; }
+
+        .rfq-box { background: var(--card); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow); border-top: 4px solid var(--accent); }
+        .rfq-box h3 { margin-bottom: 20px; color: var(--navy); }
+        .rfq-box input, .rfq-box textarea { width: 100%; padding: 12px 14px; border: 1px solid #d0d7e0; border-radius: 6px; font-size: .95rem; margin-bottom: 14px; font-family: inherit; transition: .2s; }
+        .rfq-box input:focus, .rfq-box textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(230,117,26,.1); }
+        .rfq-box textarea { min-height: 120px; resize: vertical; }
+        .rfq-box .btn-primary { width: 100%; text-align: center; }
+        .rfq-box .hint { font-size: .8rem; color: var(--light); text-align: center; margin-top: 8px; }
+
+        @media(max-width:768px){
+            .contact-grid { grid-template-columns: 1fr; }
+            section { padding: 50px 0; }
+            h2 { font-size: 1.5rem; }
+            .adv-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ---- BOTTOM CTA ---- */
+        .bottom-cta { background: linear-gradient(135deg, #060f1e 0%, #1a3f6b 100%); color: white; text-align: center; padding: 60px 0; }
+        .bottom-cta h2 { color: white; border: none; margin-bottom: 14px; }
+        .bottom-cta p { color: #8ab4d6; margin-bottom: 24px; }
+        .bottom-cta .btn-primary { font-size: 1.05rem; padding: 15px 44px; }
+
+        /* ---- FOOTER ---- */
+        footer { background: var(--navy); color: #7b8fa0; padding: 36px 0; font-size: .85rem; text-align: center; }
+        footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
+        footer a { color: #8ab4d6; text-decoration: none; }
+        footer a:hover { color: white; }
+
+        /* ---- ANIMATIONS ---- */
+        .fade-in { opacity: 0; transform: translateY(20px); animation: fadeUp .6s ease forwards; }
+        @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+<!-- ====== NAVIGATION ====== -->
+<nav class="nav">
+    <div class="inner">
+        <a href="#" class="logo">ZRXI<span>CHIP</span></a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+        <div class="nav-links">
+            <a href="#products">Продукция</a>
+            <a href="#brands">Бренды</a>
+            <a href="#why-us">Преимущества</a>
+            <a href="#contact">Контакты</a>
+            <button class="lang" onclick="this.textContent=this.textContent==='RU'?'EN':'RU';alert('Language switch demo')">RU</button>
+        </div>
+    </div>
+</nav>
+
+<!-- ====== HERO ====== -->
+<header class="hero">
+    <div class="container">
+        <div>
+            <h1>Электронные компоненты<br><span>из Шэньчжэня и Гонконга</span></h1>
+            <p class="lead">Прямые поставки микросхем, транзисторов, конденсаторов, разъемов, модулей питания. Доставка в Россию, Беларусь, Казахстан, Узбекистан и страны СНГ.</p>
+            <div class="actions">
+                <a href="#contact" class="btn btn-primary">Отправить BOM / RFQ</a>
+                <a href="#why-us" class="btn btn-outline">Почему мы</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-card"><div class="num">10M+</div><div class="label">SKU в доступе</div></div>
+            <div class="stat-card"><div class="num">2</div><div class="label">Склада: Шэньчжэнь + Гонконг</div></div>
+            <div class="stat-card"><div class="num">24ч</div><div class="label">Среднее время ответа</div></div>
+            <div class="stat-card"><div class="num">5</div><div class="label">Стран доставки</div></div>
+        </div>
+    </div>
+</header>
+
+<!-- ====== PRODUCT CATEGORIES ====== -->
+<section id="products">
+    <div class="container">
+        <div class="section-label">Продукция</div>
+        <h2>Поставляемые категории компонентов</h2>
+        <p class="section-desc">Полный спектр электронных компонентов от ведущих мировых производителей.</p>
+        <div class="cat-grid">
+            <div class="cat"><div class="icon">&#x1F4E1;</div><h4>Интегральные микросхемы</h4><div class="sub">MCU, MPU, DSP, FPGA, память</div></div>
+            <div class="cat"><div class="icon">&#x26A1;</div><h4>Транзисторы и диоды</h4><div class="sub">BJT, MOSFET, IGBT, SiC, TVS</div></div>
+            <div class="cat"><div class="icon">&#x1F50B;</div><h4>Конденсаторы</h4><div class="sub">Керамические, танталовые, электролитические</div></div>
+            <div class="cat"><div class="icon">&#x1F4CF;</div><h4>Резисторы</h4><div class="sub">SMD, прецизионные, мощные, сборки</div></div>
+            <div class="cat"><div class="icon">&#x1F517;</div><h4>Разъёмы</h4><div class="sub">Промышленные, RF, USB, board-to-board</div></div>
+            <div class="cat"><div class="icon">&#x1F50C;</div><h4>Реле</h4><div class="sub">Электромеханические, твердотельные, герконовые</div></div>
+            <div class="cat"><div class="icon">&#x1F4A1;</div><h4>Оптоэлектроника</h4><div class="sub">Светодиоды, оптопары, дисплеи, датчики</div></div>
+            <div class="cat"><div class="icon">&#x1F50B;</div><h4>Источники питания</h4><div class="sub">DC-DC, AC-DC, драйверы LED, модули</div></div>
+            <div class="cat"><div class="icon">&#x1F4E1;</div><h4>Кварцевые резонаторы</h4><div class="sub">Кристаллы, генераторы, фильтры</div></div>
+            <div class="cat"><div class="icon">&#x2699;</div><h4>Индуктивности</h4><div class="sub">Катушки, дроссели, ферритовые сердечники</div></div>
+            <div class="cat"><div class="icon">&#x1F4E1;</div><h4>Датчики</h4><div class="sub">Температуры, давления, движения, тока</div></div>
+            <div class="cat"><div class="icon">&#x1F4A1;</div><h4>Прочее</h4><div class="sub">Кабели, радиаторы, вентиляторы, корпуса</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== BRANDS ====== -->
+<section id="brands" class="alt">
+    <div class="container">
+        <div class="section-label">Бренды</div>
+        <h2>Поставляем продукцию мировых лидеров</h2>
+        <p class="section-desc">Прямые поставки от производителей и авторизованных дистрибьюторов. Никаких подделок — только оригинальные компоненты с полной прослеживаемостью.</p>
+        <div class="brand-grid">
+            <span class="brand">Texas Instruments</span>
+            <span class="brand">Analog Devices</span>
+            <span class="brand">STMicroelectronics</span>
+            <span class="brand">Microchip</span>
+            <span class="brand">Infineon</span>
+            <span class="brand">NXP Semiconductors</span>
+            <span class="brand">ON Semiconductor</span>
+            <span class="brand">Maxim Integrated</span>
+            <span class="brand">Xilinx / AMD</span>
+            <span class="brand">Intel / Altera</span>
+            <span class="brand">Cypress / Infineon</span>
+            <span class="brand">Vishay</span>
+            <span class="brand">Murata</span>
+            <span class="brand">Panasonic</span>
+            <span class="brand">TE Connectivity</span>
+            <span class="brand">Molex</span>
+            <span class="brand">Bourns</span>
+            <span class="brand">Yageo</span>
+            <span class="brand">Samsung Electro-Mechanics</span>
+            <span class="brand">TDK</span>
+            <span class="brand">Hirose</span>
+            <span class="brand">Renesas</span>
+            <span class="brand">ROHM Semiconductor</span>
+            <span class="brand">Diodes Inc.</span>
+            <span class="brand">Littelfuse</span>
+            <span class="brand">Würth Elektronik</span>
+        </div>
+        <p style="margin-top:20px;color:var(--light);font-size:.9rem;">Это неполный список. Присылайте Ваш BOM — подберём любые позиции.</p>
+    </div>
+</section>
+
+<!-- ====== WHY US ====== -->
+<section id="why-us">
+    <div class="container">
+        <div class="section-label">Преимущества</div>
+        <h2>Почему клиенты выбирают нас</h2>
+        <p class="section-desc">Мы понимаем специфику рынка СНГ и предлагаем решения, которые работают.</p>
+        <div class="adv-grid">
+            <div class="adv">
+                <div class="adv-icon" style="background:#e8f5e9;">&#x1F4E6;</div>
+                <div>
+                    <h4>Шэньчжэнь + Гонконг</h4>
+                    <p>Два склада в крупнейшем мировом хабе электронных компонентов. Доступ к десяткам миллионов SKU на спотовом рынке.</p>
+                </div>
+            </div>
+            <div class="adv">
+                <div class="adv-icon" style="background:#e3f2fd;">&#x1F4B0;</div>
+                <div>
+                    <h4>Конкурентные цены</h4>
+                    <p>Прямые цепочки поставок без лишних посредников. Оптимизируем BOM по стоимости и доступности.</p>
+                </div>
+            </div>
+            <div class="adv">
+                <div class="adv-icon" style="background:#fff3e0;">&#x1F30D;</div>
+                <div>
+                    <h4>Опыт с СНГ</h4>
+                    <p>Работаем с Россией, Беларусью, Казахстаном, Узбекистаном. Знаем нюансы логистики и оплаты в текущих условиях.</p>
+                </div>
+            </div>
+            <div class="adv">
+                <div class="adv-icon" style="background:#fce4ec;">&#x1F4CB;</div>
+                <div>
+                    <h4>Подбор аналогов</h4>
+                    <p>Если позиция снята с производства или имеет длительный срок поставки — предложим pin-to-pin замену из доступных.</p>
+                </div>
+            </div>
+            <div class="adv">
+                <div class="adv-icon" style="background:#e8eaf6;">&#x1F4B3;</div>
+                <div>
+                    <h4>Гибкая оплата</h4>
+                    <p>Юани, рубли, доллары США. Подберём оптимальный способ расчётов под Вашу ситуацию.</p>
+                </div>
+            </div>
+            <div class="adv">
+                <div class="adv-icon" style="background:#e0f2f1;">&#x2705;</div>
+                <div>
+                    <h4>Только оригиналы</h4>
+                    <p>100% оригинальные компоненты с прослеживаемостью. Никаких подделок и восстановленных деталей.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== HOW WE WORK ====== -->
+<section class="alt">
+    <div class="container">
+        <div class="section-label">Процесс</div>
+        <h2>Как начать работать</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:32px;">
+            <div style="text-align:center;">
+                <div style="width:56px;height:56px;border-radius:50%;background:var(--accent);color:white;font-size:1.4rem;font-weight:800;line-height:56px;margin:0 auto 12px;">1</div>
+                <h4 style="color:var(--navy);">Пришлите BOM</h4>
+                <p style="font-size:.88rem;color:var(--light);">Отправьте список интересующих позиций на почту</p>
+            </div>
+            <div style="text-align:center;">
+                <div style="width:56px;height:56px;border-radius:50%;background:var(--accent);color:white;font-size:1.4rem;font-weight:800;line-height:56px;margin:0 auto 12px;">2</div>
+                <h4 style="color:var(--navy);">Получите предложение</h4>
+                <p style="font-size:.88rem;color:var(--light);">Цены, сроки, аналоги — в течение 24 часов</p>
+            </div>
+            <div style="text-align:center;">
+                <div style="width:56px;height:56px;border-radius:50%;background:var(--accent);color:white;font-size:1.4rem;font-weight:800;line-height:56px;margin:0 auto 12px;">3</div>
+                <h4 style="color:var(--navy);">Согласуйте заказ</h4>
+                <p style="font-size:.88rem;color:var(--light);">Подтверждение деталей, оплата, логистика</p>
+            </div>
+            <div style="text-align:center;">
+                <div style="width:56px;height:56px;border-radius:50%;background:var(--accent);color:white;font-size:1.4rem;font-weight:800;line-height:56px;margin:0 auto 12px;">4</div>
+                <h4 style="color:var(--navy);">Получите груз</h4>
+                <p style="font-size:.88rem;color:var(--light);">Доставка до двери или склада в Вашем городе</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== CONTACT SECTION ====== -->
+<section id="contact">
+    <div class="container">
+        <div class="section-label">Контакты</div>
+        <h2>Свяжитесь с нами</h2>
+        <p class="section-desc">Отправьте BOM-лист или запрос — мы ответим в течение 24 часов.</p>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="item">
+                    <div class="ci-icon">&#x1F464;</div>
+                    <div>
+                        <div class="ci-label">Контактное лицо</div>
+                        <div class="ci-val">Eren (Эрен) — Sales Manager</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ci-icon">&#x2709;</div>
+                    <div>
+                        <div class="ci-label">Email</div>
+                        <div class="ci-val"><a href="mailto:zhouguitao@zrxic-chip.com">zhouguitao@zrxic-chip.com</a></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ci-icon">&#x260E;</div>
+                    <div>
+                        <div class="ci-label">Телефон / WeChat / WhatsApp</div>
+                        <div class="ci-val"><a href="tel:+8615976927163">+86 159 7692 7163</a></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ci-icon">&#x1F4F2;</div>
+                    <div>
+                        <div class="ci-label">Telegram</div>
+                        <div class="ci-val"><a href="https://t.me/eren_zrxic">@eren_zrxic</a></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ci-icon">&#x1F3ED;</div>
+                    <div>
+                        <div class="ci-label">Компании</div>
+                        <div class="ci-val" style="font-weight:400;">
+                            Shenzhen Zhirui Xin Electronics Co., Ltd.<br>
+                            CHIDINGX TECH (HONG KONG) LIMITED
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ci-icon">&#x1F4CD;</div>
+                    <div>
+                        <div class="ci-label">Офисы</div>
+                        <div class="ci-val" style="font-weight:400;">Шэньчжэнь, Китай • Гонконг</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rfq-box">
+                <h3>Отправить запрос / BOM</h3>
+                <form action="mailto:zhouguitao@zrxic-chip.com" method="POST" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Ваше имя / компания *" required>
+                    <input type="email" name="email" placeholder="Ваш Email *" required>
+                    <input type="text" name="subject" placeholder="Тема: RFQ / BOM / Сотрудничество">
+                    <textarea name="message" placeholder="Список позиций, количество, целевая цена (если есть)&#10;&#10;Пример:&#10;STM32F103C8T6 — 500 шт&#10;IRFZ44NPBF — 2000 шт"></textarea>
+                    <button type="submit" class="btn btn-primary">Отправить запрос</button>
+                    <div class="hint">Или напишите напрямую: zhouguitao@zrxic-chip.com</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== BOTTOM CTA ====== -->
+<div class="bottom-cta">
+    <div class="container">
+        <h2>Ищете надёжного поставщика электронных компонентов?</h2>
+        <p>Пришлите Ваш BOM — и мы подготовим ценовое предложение в течение 24 часов</p>
+        <a href="mailto:zhouguitao@zrxic-chip.com?subject=RFQ%20/%20BOM%20запрос" class="btn btn-primary">Отправить BOM сейчас</a>
+    </div>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+    <div class="container">
+        <span>&copy; 2026 Shenzhen Zhirui Xin Electronics Co., Ltd. | CHIDINGX TECH (HONG KONG) LIMITED</span>
+        <span><a href="mailto:zhouguitao@zrxic-chip.com">zhouguitao@zrxic-chip.com</a></span>
+    </div>
+</footer>
+
+</body>
+</html>
