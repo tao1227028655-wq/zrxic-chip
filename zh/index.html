@@ -26,7 +26,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:40px 0;te
 </head><body>
 <nav class="nav">
 <div class="logo">ZRXI<span>CHIP</span></div>
-<a href="#products" class="nav-link">产品</a><a href="#brands" class="nav-link">品牌</a><a href="#why-us" class="nav-link">优势</a><a href="#contact" class="nav-link">联系</a>
+<a href="#products" class="nav-link">产品</a><a href="#brands" class="nav-link">品牌</a><a href="#faq" class="nav-link">FAQ</a><a href="#why-us" class="nav-link">优势</a><a href="#contact" class="nav-link">联系</a>
 <div class="lang-group"><a href="/en/" class="lang">EN</a><a href="/zh/" class="lang active">中</a><a href="/ru/" class="lang">RU</a></div>
 <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')">&#9776;</button>
 </nav>
@@ -113,7 +113,48 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:40px 0;te
 <button type="submit" class="btn btn-primary">&#9654; 发送询价</button>
 <div class="hint">直邮: zhouguitao@zrxic-chip.com</div>
 </form></div>
-</div></div></section>
+></div></section>
+
+<section id="faq" style="padding:70px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)"><div class="container">
+<div class="section-badge">知识库</div>
+<h2><span>常见</span> 问题</h2>
+<p class="section-desc">关于从中国采购电子元器件的常见问题：报价时效、物流、质量保障。</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;margin-top:24px">
+<details style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:20px 22px;cursor:pointer;color:var(--text)">
+<summary style="font-weight:600;color:#c8d6e5;font-size:1rem;margin-bottom:8px">BOM报价需要多长时间？</summary>
+<p style="font-size:.88rem;color:var(--text2);margin-top:10px">标准响应时间 <strong>24小时内</strong>。紧急需求可在深圳工作时间（UTC+8）2-4小时内响应。</p>
+</details>
+<details style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:20px 22px;cursor:pointer;color:var(--text)">
+<summary style="font-weight:600;color:#c8d6e5;font-size:1rem;margin-bottom:8px">你们能发货到俄罗斯、白俄罗斯、哈萨克斯坦吗？</summary>
+<p style="font-size:.88rem;color:var(--text2);margin-top:10px">可以。我们定期发货至俄罗斯、白俄罗斯、哈萨克斯坦、乌兹别克斯坦等独联体国家。熟知物流路线、时效和清关流程。</p>
+</details>
+<details style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:20px 22px;cursor:pointer;color:var(--text)">
+<summary style="font-weight:600;color:#c8d6e5;font-size:1rem;margin-bottom:8px">如何保证元器件是原装正品？</summary>
+<p style="font-size:.88rem;color:var(--text2);margin-top:10px">所有元器件均从原厂及授权代理商采购。提供 <strong>批次溯源</strong> 追踪，发货前提供丝印照片，支持第三方实验室检测（X-ray、开盖验证）。如发现假冒，100%退款。</p>
+</details>
+<details style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:20px 22px;cursor:pointer;color:var(--text)">
+<summary style="font-weight:600;color:#c8d6e5;font-size:1rem;margin-bottom:8px">你们供应哪些品牌？</summary>
+<p style="font-size:.88rem;color:var(--text2);margin-top:10px">26+全球品牌：TI、ADI、ST、Microchip、Infineon、NXP、ON Semi、Maxim、Xilinx/AMD、Intel/Altera、Vishay、Murata、TE、Molex、TDK、Renesas等。同时提供国产替代方案：GigaDevice、雅特力、圣邦微。</p>
+</details>
+<details style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:20px 22px;cursor:pointer;color:var(--text)">
+<summary style="font-weight:600;color:#c8d6e5;font-size:1rem;margin-bottom:8px">接受哪些付款方式？</summary>
+<p style="font-size:.88rem;color:var(--text2);margin-top:10px">支持人民币（CNY）、卢布（RUB）、美元（USD）银行转账。根据客户所在地区和支付体系，灵活匹配最佳结算方案。</p>
+</details>
+<details style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:20px 22px;cursor:pointer;color:var(--text)">
+<summary style="font-weight:600;color:#c8d6e5;font-size:1rem;margin-bottom:8px">提供国产替代（替换）方案吗？</summary>
+<p style="font-size:.88rem;color:var(--text2);margin-top:10px">提供。我们可匹配pin-to-pin兼容的国产方案：GigaDevice（替代STM32）、雅特力（替代ST）、圣邦微（替代ADI/TI运放）、芯龙（替代TI DC-DC）、华晶（替代Infineon MOSFET）。免费兼容性验证。</p>
+</details>
+<details style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:20px 22px;cursor:pointer;color:var(--text)">
+<summary style="font-weight:600;color:#c8d6e5;font-size:1rem;margin-bottom:8px">物流怎么走？时效多久？</summary>
+<p style="font-size:.88rem;color:var(--text2);margin-top:10px">空运：莫斯科 ~7天，阿拉木图 ~5天，明斯克 ~8天。陆运：15-20天至俄罗斯/独联体。铁路：20-25天。全程实时追踪，门到门交付。</p>
+</details>
+<details style="background:var(--glass);border:1px solid var(--border);border-radius:12px;padding:20px 22px;cursor:pointer;color:var(--text)">
+<summary style="font-weight:600;color:#c8d6e5;font-size:1rem;margin-bottom:8px">最小起订量是多少？</summary>
+<p style="font-size:.88rem;color:var(--text2);margin-top:10px">无最小起订量限制。小批量（10颗起）到大批量（10万+颗）均可。原型打样和验证阶段单独报价。</p>
+</details>
+</div>
+</div></section>
+
 <div class="cta-bottom"><div class="container">
 <h2>准备好 <span>开始</span> 了吗？</h2>
 <p>发送 BOM —— 24 小时内返回报价方案。</p>
